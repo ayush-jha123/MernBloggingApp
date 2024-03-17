@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+}
+
+main {
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+header nav {
+  display: flex;
+  gap: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+img {
+ max-width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+main .post {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 25px;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width:1000px) {
+  main .post{
+    grid-template-columns: .9fr 1.1fr;
+  }
+}
+.post .text {
+  margin: 0px;
+  width: 100%;
+}
+
+.post .text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post .info {
+  display: flex;
+  color: #aaa;
+  gap: 15px;
+}
+
+.post .info a.author {
+  font-weight: bold;
+  color: rgb(26, 24, 24);
+}
+
+.text h1 {
+  margin-bottom: 0;
+  line-height: 35px;
+}
+
+.text {
+  width: 36vw;
+}
+
+form.Login,
+form.Register {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 3px;
+  border-radius: 6px;
+  background-color: #555;
+  color: white;
+}
+
+form h1 {
+  text-align: center;
+}
+
+.post-page .image {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.post-page .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post-page time {
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.post-page h1 {
+  margin-bottom: 4px;
+  font-size: 33px;
+}
+ .post-page .author{
+  display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+ }
+
+ .post-page .content{
+  line-height: 25px;
+ }
+
+ .edit-post .edit-btn{
+  background-color: rgb(26, 24, 24);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-flex;
+    gap: 2px;
+ }
+
+ .edit-post{
+  text-align: center;
+    margin: 11px 3px;
+ }
+
+ a svg{
+  height: 20px;
+ }
